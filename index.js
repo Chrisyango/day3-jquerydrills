@@ -8,10 +8,10 @@
 // Researching on your own is a key skill, and it'll get easier with practice.
 
 function carousel() {
-  $('.thumbnail').click(function(event) {
-    alert("Hello");
+  $('.thumbnail').click(function (event) {
+    var img = $(this).find('img').attr('src');
+    $('.hero').find('img').attr('src', img)
   });
 }
-
 
 $(carousel);
